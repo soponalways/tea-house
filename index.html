@@ -17,6 +17,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+              },
+              fontFamily: {
+                'manrope': ['Manrope' , 'serif']
               }
             }
           }
@@ -25,8 +28,34 @@
     <title>Tea House</title>
 </head>
 
-<body>
-    <h1 class="text-center font-bold underline uppercase my-4 bg-red-500 py-4 px-8 rounded-xl w-fit ">Hello world!</h1>
+<body class="font-manrope">
+    <main class="px-4">
+        <!-- banner section  -->
+        <section  class="lg:flex lg:justify-between max-w-screen-xl mx-auto">
+            <!-- Text Section  -->
+             <div>
+                <h1 class="text-5xl md:text-7xl font-bold md:font-extrabold mb-8">It's good <br>
+                    tea time at The <br> Tea House</h1>
+                <p class="text-gray-500 font-medium w-3/4 mb-8">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="px-3 md:px-5 py-2 md:py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white flex space-x-2 items-center font-semibold md:font-bold text-lg md:text-xl rounded-xl"><span>Explore More</span> <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+             </div>
+
+             <!-- Img content -->
+              <div class="relative">
+                <!-- Img -->
+                 <img src="./images/banner.png" alt="Juice">
+                 <!-- Card -->
+                  <div class="flex space-x-3 items-center bg-white shadow-lg absolute px-4 py-3 rounded-lg
+                  top-3/4 left-20 md:left-32">
+                    <div><i class="fa-solid fa-star text-amber-400"></i></div>
+                    <div>
+                        <h3 class="font-bold md:font-extrabold text-2xl md:text-3xl">5.0</h3>
+                        <p class="font-semibold text-gray-500">Trust Pilot Ratings</p>
+                    </div>
+                  </div>
+              </div>
+        </section>
+    </main>
 </body>
 
 </html>
